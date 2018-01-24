@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/* 첫 번째 방
+-height / min-height
+-reset : body(margin 을 리셋)
+두 번째 방
+-height / min-height : 100%, inherit
+-박스를 정렬 : width:고정 -> margin-left/right/center
+-margin / padding / border
+-DevTool(F12) 
+*/
+/* --- reset ------------------------ */
+body{
+	margin:0px;
+	padding:0px;
+	/* font-family: "맑은 고딕", 고딕, sans-serif; */
+}
+ul,h1{padding:0px; margin:0px;}
+li{display: block;}
+a{text-decoration: none; color:inherit;}
+
+
+/* -----------------abstract style---------------------- */
+
+/* --------------------------component------------------- */
+
+.btn{
+	
+}
+.btn-default{
+	background: #759d2a;
+	min-width: 71px;
+	color:#fff;
+	display: inline-block;
+	text-align: center;
+	padding: 3px 8px;
+	border-radius: 5px;
+}
+.btn-warning{
+	
+}
+.btn-cancel{
+	
+}
+/* ----------------------------------------------------- */
+.hor-menu
+	{	
+		display: inline-block;
+	}
+	
+.hor-menu >h1{display:none;}	
+.hor-menu > ul{overflow: auto;}
+
+.hor-menu > ul >li{
+		float:left;
+  	 	
+		}
+		
+.hor-menu.first-pad-none> ul >li:first-child{
+		background: none;
+		padding-left:0;
+		}
+/* --------header------------- */
+#header{
+	height: 70px;
+	/*background:url( "../images/logo.png") no-repeat 0px 0px;*/	
+}
+
+.main-menu
+	{	
+		font-family: "맑은고딕", "고딕", sans-serif; 
+		font-size: 15px;
+		font-weight: bold;	
+		color:#000;	
+	}
+
+/* --------------------------member--------------------------------------------------- */
+.main-menu > ul >li{
+	
+		padding-left: 24px;
+  	 	background: url(../images/bg-main-menu-vsp.png) no-repeat 13px center;
+  	 	
+		}
+		
+.member-menu{
+		font-family: "맑은고딕", "고딕", sans-serif; 
+		font-size: 10px;
+		font-weight: bold;	
+	
+}
+.member-menu>ul>li{
+	
+		padding-left: 9px;
+		background: url(../images/bg-member-menu-sp.png) no-repeat 5px center;
+}
+		
+/* --------------------visual------------------------------------- */
+#visual{
+		height: 171px;
+		border-top: 3px solid #8CBA34;
+	/* 헤더나 비주얼에 경계선을 줘야하는데 기준은 뒤에꺼로 */
+	/* background: #313131 url( "../images/bg-visual.png") no-repeat center; */
+}
+
+/*------------------------------------------------------------*/
+#body{
+		min-height: 300px;
+		border-top: 3px solid #8CBA34;
+		margin-top:1px;
+	
+}
+
+#footer{
+		height: 100px;
+		background:#313131;
+	
+}
+
+.root-container{
+		height: 100%;
+		min-height:inherit;
+		/* height: inherit; */
+		width:960px;
+	
+	/* opacity:0.5; */
+	
+		margin-left: auto;
+	    margin-right: auto;
+}
+
+#body >.root-container{
+		display: flex;
+		flex-direction: row; /* default값은 row임 */
+		background: url(../images/bg-body.png) repeat-y center;
+}
+
+#aside{
+	
+		min-height: inherit;
+		min-width:205px;
+		/* float:left; */
+		background: url(../images/bg-aside-title.png) no-repeat left top;
+	
+}
+
+#main{
+		box-sizing:border-box;
+		/* float: left; */
+		padding:45px 0px 35px 35px;
+
+}
+
+
+#footer{height:150px}
+
+#main > section > h1{
+		width:100px;
+	
+	 	/*background:url( "../images/logo.png") no-repeat 0px 0px;*/
+		background-attachment:local; 
+		/* background:url( "../images/logo.png") no-repeat 210px 270px;
+		background-attachment:fixed; */
+		/*overflow: scroll;*/
+} 
+
+.clear-fix{
+	
+}
+
+.clear-fix::after{
+		content:"안뇽하세요?";
+		display: block;
+		clear: both;
+		height: 0px;
+		overflow: hidden;
+}
+
+
+
+.main-title{
+	
+		background: url(../images/icon-main-title.png) no-repeat left center;
+		font-family: 맑은 고딕, 고딕, sans-serif;
+	    font-size: 21px;
+	    font-weight: bold;
+	    color: #646464;
+	    padding-left: 25px;
+	
+	}
+
+
+
+
+
